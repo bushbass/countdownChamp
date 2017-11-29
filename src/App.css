@@ -9,6 +9,6 @@
 }
 
 .Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds {
-  display: inline;
+  display: inline-block;
   margin: 10px
 }
