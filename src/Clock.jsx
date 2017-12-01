@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import './App.css';
 
 class Clock extends Component {
@@ -13,7 +13,7 @@ class Clock extends Component {
 }  
 
 componentWillMount() {
-this.getTimeUntil(this.props.deadline);
+  this.getTimeUntil(this.props.deadline);
 }
 
 componentDidMount() {
