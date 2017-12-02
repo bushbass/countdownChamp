@@ -4,7 +4,6 @@ import Clock from './Clock';
 import Stopwatch from './Stopwatch';
 import {Form, FormControl, Button} from 'react-bootstrap';
 
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -26,16 +25,15 @@ class App extends Component {
       <Form inline>
         <FormControl 
           className="Deadline-input" 
-          onChange={event=> this.setState({newDeadline: event.target.value})} 
+          onChange={ event => this.setState({newDeadline: event.target.value}) } 
           placeholder='new date' type="text"/>
         <Button 
-          onClick= {()=> this.changeDeadline()}>submit
+          onClick= { () => this.changeDeadline() }>submit
         </Button>
       </Form>
-      <Stopwatch />
+      {/* <Stopwatch /> */}
     </div>
     )
   }
 }
-
 export default App;

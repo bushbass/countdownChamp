@@ -14,16 +14,16 @@ class Stopwatch extends Component {
   changeTime() {
     this.setState({time: this.state.newTime})
   }
-
   componentWillMount() {
-    this.setState({time: this.state.newTime-1});
-    }
-    
-    componentDidMount() {
-      setInterval(() => this.changeTime(this.state.time), 1000)  
-    }
+    this.setState(
+      
+      () => this.setState({time: this.state.newTime-1})
+    );
+  }
+  componentDidMount() {
+    setInterval(() => this.changeTime(this.state.time), 1000)  
+  }
   
-
   render() {
     return (
       <div>
