@@ -22,11 +22,11 @@ class App extends Component {
     <div className='App'>
       <div className='App-title'>Countdown to {this.state.deadline}</div>
       <Clock deadline = {this.state.deadline} />
-      <Form inline>
-        <FormControl 
+      <Form>
+        <FormControl
           className="Deadline-input" 
           onChange={ event => this.setState({newDeadline: event.target.value}) } 
-          placeholder='new date' type="text"/>
+          placeholder='Enter new date - must click button in this version' type="text"/>
         <Button 
           onClick= { () => this.changeDeadline() }>submit
         </Button>

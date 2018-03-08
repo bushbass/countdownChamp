@@ -11,12 +11,9 @@ class Clock extends Component {
       seconds: 0,
   }
 }  
-
-
 componentWillMount() {
   this.getTimeUntil(this.props.deadline);
 }
-
 componentDidMount() {
   setInterval(() => this.getTimeUntil(this.props.deadline), 1000)  
 }
@@ -40,8 +37,6 @@ render() {
           <div className='Clock-seconds'>{this.leading0(this.state.seconds)} seconds</div>
       </div>
     )
-      
   }
 }
-
 export default Clock;
